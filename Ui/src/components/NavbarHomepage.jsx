@@ -12,10 +12,10 @@ const NavbarHomepage = () => {
         {/* <Link to="/view-recipie" className="text-white text-lg">view recipis</Link> */}
         
       </nav>
-      <form action="/logout" method="get">
+      {/* <form action="/logout" method="get"> */}
       {/* <!-- <form action="/"> --> */}
         <Logout/> 
-      </form>
+      {/* </form> */}
     </header>
 
 </>

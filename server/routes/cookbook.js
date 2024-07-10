@@ -1,10 +1,10 @@
 const express = require("express");
 const router = express.Router();
 const recip=require('../models/recipes')
-// const veryfyTocken=require('../middleware/authMiddleware')
+const veryfyTocken=require('../middleware/authMiddleware')
 
 
-router.get("/recipes",veryfyTocken, async (req, res) => {
+router.get("/recipes", veryfyTocken,async (req, res) => {
   const details = await recip.find({});
   res.json(details);
 });

@@ -78,8 +78,9 @@ router.post("/login", async (req, res) => {
 });
 
 router.get("/logout", (req, res) => {
-  // res.clearCookie("Authtoken");
+  res.clearCookie("Authtoken");
   res.status(200).send("Logout successful");
+  // res.redirect('/')
   return res;
 });
 
