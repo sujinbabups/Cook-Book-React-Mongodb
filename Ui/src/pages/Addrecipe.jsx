@@ -41,7 +41,7 @@ const AddRecipe = () => {
                     <input type="text" id="recipe_id" name="recipeId" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required value={recipeId} onChange={(e) => setId(e.target.value)} />
                 </div>
                 <div className="mb-4">
-                    <label htmlFor="name" className="block text-gray-700 text-sm font-bold mb-2">Name</label>
+                    <label htmlFor="name" className="block text-gray-700 text-sm font-bold mb-2">Recipe Name</label>
                     <input type="text" id="name" name="recipeName" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required value={recipeName} onChange={(e) => setName(e.target.value)} />
                 </div>
                 <div className="mb-4">

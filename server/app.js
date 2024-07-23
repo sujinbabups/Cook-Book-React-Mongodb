@@ -28,7 +28,7 @@ const PORT = 5002;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
-mongoose.connect("mongodb://localhost:27017/cook-Book");
+mongoose.connect("mongodb://cb_db:27017/cook-Book");
 
 const database = mongoose.connection;
 

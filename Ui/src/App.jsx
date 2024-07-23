@@ -15,6 +15,7 @@ import Loginpage from './pages/Loginpage'
 import RecipiePage from './pages/RecipiePage'
 import Mainlayout from './Layout/Mainlayout'
 import Addrecipe from './pages/Addrecipe'
+import Notfouund from './components/Notfouund'
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
         <Route path='/' element={<Mainlayout/>}>
         <Route path='/home' element={<RecipiePage/>}/>
         <Route path='/add-recipie' element={<Addrecipe/>}/>
+        <Route path='/*' element={<Notfouund/>}/>
         
 
       </Route>

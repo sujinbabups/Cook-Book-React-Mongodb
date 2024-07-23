@@ -14,7 +14,7 @@ const jwt = require("jsonwebtoken");
 
 
 
-// User registration
+// User registrationgg
 router.post("/register", async (req, res) => {
     try {
       // const {} = userDetails
@@ -42,7 +42,7 @@ router.post("/login", async (req, res) => {
 
     console.log(email, password);
     const user = await User.findOne({ email });
-    console.log(user, "user");
+    // console.log(user, "user");
     if (!user) {
       return res
         .status(401)
